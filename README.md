@@ -11,7 +11,6 @@ The code inside this reporsitory allows a Raspberry Pi 4B model to control the P
 * Raspbian OS
 * GCC
 
-
 ## Disclaimer
 
-The code inside this repository should not be used outside the researching laboratory since it does not contain any safety regulations like the factory one. And using of the code means you understand the hidden safe risks and are well prepared for it, I will take no responsibility for the damage it may cause.
+The code inside this repository should not be used outside the researching laboratory since it does not contain any safety regulations like the factory one. And using the code means you understand the hidden safe risks and are well prepared for it, I shall take no responsibility for the damage it may cause.
