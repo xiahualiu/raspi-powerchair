@@ -1,0 +1,27 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 796949-2
+D Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
+K screw terminal
+F ~
+$ENDCMP
+#
+$CMP Adafruit_1979
+D Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP NTST30120CTG
+D 50V 1A General Purpose Rectifier Diode, DO-41
+K diode
+F http://www.vishay.com/docs/88503/1n4001.pdf
+$ENDCMP
+#
+$CMP Toshiba_TK4R3E06PL
+D N-MOSFET transistor, gate/source/drain
+K transistor NMOS N-MOS N-MOSFET
+F ~
+$ENDCMP
+#
+#End Doc Library
