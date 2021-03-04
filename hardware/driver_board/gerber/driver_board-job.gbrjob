@@ -7,7 +7,7 @@
       "Application": "Pcbnew",
       "Version":     "(5.1.9)-1"
     },
-    "CreationDate":  "2021-02-11T14:24:59-05:00"
+    "CreationDate":  "2021-03-04T13:54:21-05:00"
   },
   "GeneralSpecs":
   {
@@ -19,8 +19,8 @@
     },
     "Size":
     {
-      "X": 155.100,
-      "Y": 100.100
+      "X": 73.050,
+      "Y": 48.050
     },
     "LayerNumber": 2,
     "BoardThickness":  1.600
@@ -60,6 +60,16 @@
       "FilePolarity":  "Positive"
     },
     {
+      "Path":  "driver_board-F_SilkS.gbr",
+      "FileFunction":  "Legend,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "driver_board-B_SilkS.gbr",
+      "FileFunction":  "Legend,Bot",
+      "FilePolarity":  "Positive"
+    },
+    {
       "Path":  "driver_board-F_Mask.gbr",
       "FileFunction":  "SolderMask,Top",
       "FilePolarity":  "Negative"
@@ -77,6 +87,10 @@
   ],
   "MaterialStackup":
   [
+    {
+      "Type":  "Legend",
+      "Notes":  "Layer F.SilkS"
+    },
     {
       "Type":  "SolderPaste",
       "Notes":  "Layer F.Paste"
@@ -105,6 +119,10 @@
     {
       "Type":  "SolderPaste",
       "Notes":  "Layer B.Paste"
+    },
+    {
+      "Type":  "Legend",
+      "Notes":  "Layer B.SilkS"
     }
   ]
 }

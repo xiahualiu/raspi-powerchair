@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\duicu\OneDrive\Documents\GitHub\raspi-powerchair\hardware\driver_board\driver_board.sch</source>
+    <date>2021/3/4 13:53:15</date>
+    <tool>Eeschema (5.1.9)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>driver_board.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="R9">
+      <value>10R</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C47019</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>600A193C</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>10R</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C47019</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>600A1969</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>1kR</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-25121WF1001T4E_C54315.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C54315</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>600A198B</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>SUF4007</value>
+      <footprint>Diode_SMD:D_MELF</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/DIOTEC-SUF4007_C212757.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C212757</field>
+      </fields>
+      <libsource lib="Diode" part="1N4007" description="1000V 1A General Purpose Rectifier Diode, DO-41"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>600A19A2</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/210/POE-D13-00-E-RD-166365https://datasheet.lcsc.com/szlcsc/YAGEO-https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C14663</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6081516A</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/210/POE-D13-00-E-RD-166365https://datasheet.lcsc.com/szlcsc/YAGEO-https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C14663</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60487F87</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21A226MAQNNNE_C45783.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C45783</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60497C10</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>IR2110S</value>
+      <footprint>Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm</footprint>
+      <datasheet>https://www.infineon.com/dgdl/ir2110.pdf?fileId=5546d462533600a4015355c80333167e</datasheet>
+      <fields>
+        <field name="LCSC">C2968</field>
+      </fields>
+      <libsource lib="driver_board" part="IR2110S" description="High and Low Side Driver, 500V, 2.0/2.0A, SOIC-16W"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>607F442C</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>SUF4007</value>
+      <footprint>Diode_SMD:D_MELF</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/DIOTEC-SUF4007_C212757.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C212757</field>
+      </fields>
+      <libsource lib="Diode" part="1N4007" description="1000V 1A General Purpose Rectifier Diode, DO-41"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60899118</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>SUF4007</value>
+      <footprint>Diode_SMD:D_MELF</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/DIOTEC-SUF4007_C212757.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C212757</field>
+      </fields>
+      <libsource lib="Diode" part="1N4007" description="1000V 1A General Purpose Rectifier Diode, DO-41"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>608A625E</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>1kR</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-25121WF1001T4E_C54315.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C54315</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>608CE5D7</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>TPH4R008NH,L1Q(M</value>
+      <footprint>driver_board:TPH4R008NH,L1Q(M</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/408/TPH4R008NH_datasheet_en_20191017-1140027.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C396039</field>
+      </fields>
+      <libsource lib="driver_board" part="TPH4R008NH,L1Q(M" description="N-MOSFET transistor, source/gate/drain"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6091B1D2</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>TPH4R008NH,L1Q(M</value>
+      <footprint>driver_board:TPH4R008NH,L1Q(M</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/408/TPH4R008NH_datasheet_en_20191017-1140027.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C396039</field>
+      </fields>
+      <libsource lib="driver_board" part="TPH4R008NH,L1Q(M" description="N-MOSFET transistor, source/gate/drain"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>609298F1</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>10R</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C47019</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6095D0CD</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>10R</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="LCSC">C47019</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6095D0E4</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>1kR</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-25121WF1001T4E_C54315.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C54315</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6095D0EE</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/210/POE-D13-00-E-RD-166365https://datasheet.lcsc.com/szlcsc/YAGEO-https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C14663</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6095D128</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/210/POE-D13-00-E-RD-166365https://datasheet.lcsc.com/szlcsc/YAGEO-https://datasheet.lcsc.com/szlcsc/YAGEO-CC0603KRX7R9BB104_C14663.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C14663</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6095D13D</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21A226MAQNNNE_C45783.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C45783</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6095D154</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>IR2110S</value>
+      <footprint>Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm</footprint>
+      <datasheet>https://www.infineon.com/dgdl/ir2110.pdf?fileId=5546d462533600a4015355c80333167e</datasheet>
+      <fields>
+        <field name="LCSC">C2968</field>
+      </fields>
+      <libsource lib="driver_board" part="IR2110S" description="High and Low Side Driver, 500V, 2.0/2.0A, SOIC-16W"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6095D1A4</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>SUF4007</value>
+      <footprint>Diode_SMD:D_MELF</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/DIOTEC-SUF4007_C212757.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C212757</field>
+      </fields>
+      <libsource lib="Diode" part="1N4007" description="1000V 1A General Purpose Rectifier Diode, DO-41"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6095D1B3</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>SUF4007</value>
+      <footprint>Diode_SMD:D_MELF</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/DIOTEC-SUF4007_C212757.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C212757</field>
+      </fields>
+      <libsource lib="Diode" part="1N4007" description="1000V 1A General Purpose Rectifier Diode, DO-41"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6095D1BD</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>1kR</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-25121WF1001T4E_C54315.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C54315</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6095D1C7</tstamp>
+    </comp>
+    <comp ref="Q5">
+      <value>TPH4R008NH,L1Q(M</value>
+      <footprint>driver_board:TPH4R008NH,L1Q(M</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/408/TPH4R008NH_datasheet_en_20191017-1140027.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C396039</field>
+      </fields>
+      <libsource lib="driver_board" part="TPH4R008NH,L1Q(M" description="N-MOSFET transistor, source/gate/drain"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6095D1D2</tstamp>
+    </comp>
+    <comp ref="Q6">
+      <value>TPH4R008NH,L1Q(M</value>
+      <footprint>driver_board:TPH4R008NH,L1Q(M</footprint>
+      <datasheet>https://www.mouser.com/datasheet/2/408/TPH4R008NH_datasheet_en_20191017-1140027.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C396039</field>
+      </fields>
+      <libsource lib="driver_board" part="TPH4R008NH,L1Q(M" description="N-MOSFET transistor, source/gate/drain"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6095D1DC</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>1N4007</value>
+      <footprint>Diode_SMD:D_SOD-123F</footprint>
+      <datasheet>http://www.vishay.com/docs/88503/1n4001.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C181127</field>
+      </fields>
+      <libsource lib="Diode" part="1N4007" description="1000V 1A General Purpose Rectifier Diode, DO-41"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>609D9B38</tstamp>
+    </comp>
+    <comp ref="D10">
+      <value>1N4007</value>
+      <footprint>Diode_SMD:D_SOD-123F</footprint>
+      <datasheet>http://www.vishay.com/docs/88503/1n4001.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C181127</field>
+      </fields>
+      <libsource lib="Diode" part="1N4007" description="1000V 1A General Purpose Rectifier Diode, DO-41"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>609DB033</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>1N4007</value>
+      <footprint>Diode_SMD:D_SOD-123F</footprint>
+      <datasheet>http://www.vishay.com/docs/88503/1n4001.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C181127</field>
+      </fields>
+      <libsource lib="Diode" part="1N4007" description="1000V 1A General Purpose Rectifier Diode, DO-41"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>609F86BE</tstamp>
+    </comp>
+    <comp ref="D8">
+      <value>1N4007</value>
+      <footprint>Diode_SMD:D_SOD-123F</footprint>
+      <datasheet>http://www.vishay.com/docs/88503/1n4001.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C181127</field>
+      </fields>
+      <libsource lib="Diode" part="1N4007" description="1000V 1A General Purpose Rectifier Diode, DO-41"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>609F86EA</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>796949-2</value>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="driver_board" part="796949-2" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60417796</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>796949-2</value>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="driver_board" part="796949-2" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60418097</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>796949-2</value>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="driver_board" part="796949-2" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6041EA0B</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>796949-2</value>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="driver_board" part="796949-2" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>604254EC</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>796949-2</value>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="driver_board" part="796949-2" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6042BD51</tstamp>
+    </comp>
+    <comp ref="D9">
+      <value>SUF4007</value>
+      <footprint>Diode_SMD:D_MELF</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/DIOTEC-SUF4007_C212757.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C212757</field>
+      </fields>
+      <libsource lib="Diode" part="1N4007" description="1000V 1A General Purpose Rectifier Diode, DO-41"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6095D0FB</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>C</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/1912111437_TDK-C3216X5R1V226MTJ00E_C342620.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C342620</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6042E75D</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>C</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/1912111437_TDK-C3216X5R1V226MTJ00E_C342620.pdf</datasheet>
+      <fields>
+        <field name="LCSC">C342620</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6043B98A</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="1N4001">
+      <aliases>
+        <alias>1N4002</alias>
+        <alias>1N4003</alias>
+        <alias>1N4004</alias>
+        <alias>1N4005</alias>
+        <alias>1N4006</alias>
+        <alias>1N4007</alias>
+        <alias>BA157</alias>
+        <alias>BA158</alias>
+        <alias>BA159</alias>
+      </aliases>
+      <description>50V 1A General Purpose Rectifier Diode, DO-41</description>
+      <docs>http://www.vishay.com/docs/88503/1n4001.pdf</docs>
+      <footprints>
+        <fp>D*DO?41*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">1N4001</field>
+        <field name="Footprint">Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="driver_board" part="796949-2">
+      <description>Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">796949-2</field>
+        <field name="Footprint">driver_board:796949-2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="driver_board" part="IR2110S">
+      <aliases>
+        <alias>IR2112S</alias>
+        <alias>IR2113S</alias>
+        <alias>IR2213S</alias>
+        <alias>IR25607S</alias>
+        <alias>IRS2110S</alias>
+        <alias>IRS2112S</alias>
+        <alias>IRS2113S</alias>
+      </aliases>
+      <description>High and Low Side Driver, 500V, 2.0/2.0A, SOIC-16W</description>
+      <docs>https://www.infineon.com/dgdl/ir2110.pdf?fileId=5546d462533600a4015355c80333167e</docs>
+      <footprints>
+        <fp>SOIC*7.5x10.3mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">IR2110S</field>
+        <field name="Footprint">Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="LO" type="output"/>
+        <pin num="2" name="COM" type="power_in"/>
+        <pin num="3" name="VCC" type="power_in"/>
+        <pin num="4" name="NC" type="NotConnected"/>
+        <pin num="5" name="NC" type="NotConnected"/>
+        <pin num="6" name="VS" type="passive"/>
+        <pin num="7" name="VB" type="passive"/>
+        <pin num="8" name="HO" type="output"/>
+        <pin num="9" name="NC" type="NotConnected"/>
+        <pin num="10" name="NC" type="NotConnected"/>
+        <pin num="11" name="VDD" type="power_in"/>
+        <pin num="12" name="HIN" type="input"/>
+        <pin num="13" name="SD" type="input"/>
+        <pin num="14" name="LIN" type="input"/>
+        <pin num="15" name="VSS" type="power_in"/>
+        <pin num="16" name="NC" type="NotConnected"/>
+      </pins>
+    </libpart>
+    <libpart lib="driver_board" part="TPH4R008NH,L1Q(M">
+      <description>N-MOSFET transistor, source/gate/drain</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">TPH4R008NH,L1Q(M</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S" type="passive"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="Diode">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Diode.lib</uri>
+    </library>
+    <library logical="driver_board">
+      <uri>C:\Users\duicu\OneDrive\Documents\GitHub\raspi-powerchair\hardware\driver_board/driver_board.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(D6-Pad1)">
+      <node ref="R5" pin="1"/>
+      <node ref="U2" pin="1"/>
+      <node ref="D6" pin="1"/>
+    </net>
+    <net code="2" name="Net-(D5-Pad1)">
+      <node ref="D5" pin="1"/>
+      <node ref="U2" pin="8"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="3" name="Net-(C5-Pad1)">
+      <node ref="C7" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="D9" pin="1"/>
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="4" name="Net-(U2-Pad5)">
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="5" name="Net-(U2-Pad4)">
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="6" name="Net-(U2-Pad16)">
+      <node ref="U2" pin="16"/>
+    </net>
+    <net code="7" name="Net-(U2-Pad10)">
+      <node ref="U2" pin="10"/>
+    </net>
+    <net code="8" name="PWM0">
+      <node ref="J4" pin="1"/>
+      <node ref="U1" pin="12"/>
+      <node ref="U2" pin="14"/>
+    </net>
+    <net code="9" name="PWM1">
+      <node ref="U1" pin="14"/>
+      <node ref="U2" pin="12"/>
+      <node ref="J4" pin="2"/>
+    </net>
+    <net code="10" name="HV+">
+      <node ref="Q5" pin="3"/>
+      <node ref="D8" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="11" name="GND">
+      <node ref="U2" pin="2"/>
+      <node ref="U2" pin="15"/>
+      <node ref="U2" pin="13"/>
+      <node ref="U1" pin="2"/>
+      <node ref="J5" pin="1"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="U1" pin="13"/>
+      <node ref="U1" pin="15"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C10" pin="2"/>
+    </net>
+    <net code="12" name="+12V">
+      <node ref="D1" pin="2"/>
+      <node ref="U1" pin="3"/>
+      <node ref="U2" pin="3"/>
+      <node ref="D9" pin="2"/>
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="13" name="+3V3">
+      <node ref="C1" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="J5" pin="2"/>
+      <node ref="U2" pin="11"/>
+      <node ref="C10" pin="1"/>
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="14" name="Net-(U2-Pad9)">
+      <node ref="U2" pin="9"/>
+    </net>
+    <net code="15" name="Net-(J3-Pad1)">
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="16" name="Net-(D6-Pad2)">
+      <node ref="R5" pin="2"/>
+      <node ref="D6" pin="2"/>
+      <node ref="Q6" pin="2"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="17" name="Net-(D5-Pad2)">
+      <node ref="Q5" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="D5" pin="2"/>
+    </net>
+    <net code="18" name="M-">
+      <node ref="D10" pin="1"/>
+      <node ref="U2" pin="6"/>
+      <node ref="R2" pin="1"/>
+      <node ref="C5" pin="2"/>
+      <node ref="D8" pin="2"/>
+      <node ref="J2" pin="2"/>
+      <node ref="Q6" pin="3"/>
+      <node ref="C7" pin="2"/>
+      <node ref="Q5" pin="1"/>
+    </net>
+    <net code="19" name="HV-">
+      <node ref="Q2" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="D7" pin="2"/>
+      <node ref="D10" pin="2"/>
+      <node ref="J2" pin="1"/>
+      <node ref="Q6" pin="1"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="20" name="Net-(C3-Pad1)">
+      <node ref="U1" pin="7"/>
+      <node ref="D1" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C4" pin="1"/>
+    </net>
+    <net code="21" name="M+">
+      <node ref="U1" pin="6"/>
+      <node ref="Q2" pin="3"/>
+      <node ref="C4" pin="2"/>
+      <node ref="J1" pin="1"/>
+      <node ref="C3" pin="2"/>
+      <node ref="R17" pin="1"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="D2" pin="2"/>
+      <node ref="D7" pin="1"/>
+    </net>
+    <net code="22" name="Net-(D4-Pad2)">
+      <node ref="R10" pin="2"/>
+      <node ref="D4" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="Q2" pin="2"/>
+    </net>
+    <net code="23" name="Net-(D4-Pad1)">
+      <node ref="D4" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="R10" pin="1"/>
+    </net>
+    <net code="24" name="Net-(D3-Pad2)">
+      <node ref="R9" pin="2"/>
+      <node ref="D3" pin="2"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="R17" pin="2"/>
+    </net>
+    <net code="25" name="Net-(U1-Pad9)">
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="26" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="27" name="Net-(D3-Pad1)">
+      <node ref="R9" pin="1"/>
+      <node ref="D3" pin="1"/>
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="28" name="Net-(U1-Pad4)">
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="29" name="Net-(U1-Pad16)">
+      <node ref="U1" pin="16"/>
+    </net>
+    <net code="30" name="Net-(U1-Pad10)">
+      <node ref="U1" pin="10"/>
+    </net>
+  </nets>
+</export>

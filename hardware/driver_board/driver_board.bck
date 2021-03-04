@@ -12,6 +12,54 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP IR2110S
+D High and Low Side Driver, 500V, 2.0/2.0A, SOIC-16W
+K Gate Driver
+F https://www.infineon.com/dgdl/ir2110.pdf?fileId=5546d462533600a4015355c80333167e
+$ENDCMP
+#
+$CMP IR2112S
+D High and Low Side Driver, 500V, 250/500mA, SOIC-16W
+K Gate Driver
+F https://www.infineon.com/dgdl/ir2112.pdf?fileId=5546d462533600a4015355c81cb71685
+$ENDCMP
+#
+$CMP IR2113S
+D High and Low Side Driver, 500V, 2.0/2.0A, SOIC-16W
+K Gate Driver
+F https://www.infineon.com/dgdl/ir2110.pdf?fileId=5546d462533600a4015355c80333167e
+$ENDCMP
+#
+$CMP IR2213S
+D High and Low Side Driver, 1200V, 1.7/2.0A, SOIC-16W
+K Gate Driver
+F https://www.infineon.com/dgdl/Infineon-IR2213-DS-v00_02-EN.pdf?fileId=5546d462533600a4015355c9621716d8
+$ENDCMP
+#
+$CMP IR25607S
+D High and Low Side Driver, 600V, 2.0/2.0A, SOIC-16W
+K Gate Driver
+F https://www.infineon.com/dgdl/ir25607.pdf?fileId=5546d462533600a4015355ca0e7916f5
+$ENDCMP
+#
+$CMP IRS2110S
+D High and Low Side Driver, 500V, 2.0/2.0A, SOIC-16W
+K Gate Driver
+F https://www.infineon.com/dgdl/irs2110.pdf?fileId=5546d462533600a40153567660ff27b0
+$ENDCMP
+#
+$CMP IRS2112S
+D High and Low Side Driver, 500V, 290/600mA, SOIC-16W
+K Gate Driver
+F https://www.infineon.com/dgdl/irs2112pbf.pdf?fileId=5546d462533600a401535676702827b5
+$ENDCMP
+#
+$CMP IRS2113S
+D High and Low Side Driver, 500V, 2.0/2.0A, SOIC-16W
+K Gate Driver
+F https://www.infineon.com/dgdl/irs2110.pdf?fileId=5546d462533600a40153567660ff27b0
+$ENDCMP
+#
 $CMP NTST30120CTG
 D 50V 1A General Purpose Rectifier Diode, DO-41
 K diode

@@ -1,4 +1,4 @@
-19113137999688360
+19119597425565778
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83034,6 +83034,20 @@ varistor SIOV
 2
 2
 driver_board
+4P_9.53mm
+Dinkle DT-55-B01X Terminal Block  pitch 10.00mm https://www.dinkle.com/en/terminal/DT-55-B01W-XX
+Dinkle DT-55-B01X Terminal Block  pitch 10.00mm
+0
+4
+4
+driver_board
+6P_9.53mm
+Dinkle DT-55-B01X Terminal Block  pitch 10.00mm https://www.dinkle.com/en/terminal/DT-55-B01W-XX
+Dinkle DT-55-B01X Terminal Block  pitch 10.00mm
+0
+6
+6
+driver_board
 796949-2
 simple 2-pin terminal block, pitch 5.08mm, revamped version of bornier2
 terminal block bornier2
@@ -83153,11 +83167,25 @@ Resistor Axial_Power series Box pin pitch 55.88mm 11W length 50mm width 9mm heig
 2
 2
 driver_board
+SSOP-8_5.25x5.24mm_P1.27mm
+SSOP, 8 Pin (http://www.fujitsu.com/ca/en/Images/MB85RS2MT-DS501-00023-1v0-E.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SSOP SO
+0
+8
+8
+driver_board
 TK4R3E06RL
 TO-220-3, Vertical, RM 2.54mm, see https://www.vishay.com/docs/66542/to-220-1.pdf
 TO-220-3 Vertical RM 2.54mm
 0
 3
+3
+driver_board
+TPH4R008NH,L1Q(M
+SOP, 8 Pin (http://www.macronix.com/Lists/Datasheet/Attachments/7534/MX25R3235F,%20Wide%20Range,%2032Mb,%20v1.6.pdf#page=80), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOP SO
+0
+8
 3
 driver_board
 UF4007
