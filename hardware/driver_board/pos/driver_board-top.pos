@@ -1,0 +1,38 @@
+### Module positions - created on 03/05/21 12:03:38 ###
+### Printed by Pcbnew version kicad (5.1.9)-1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val               Package                                                       PosX       PosY       Rot  Side
+C1        22uF              C_0805_2012Metric                                          73.6550  -149.1850  180.0000  top
+C2        100nF             C_0603_1608Metric                                          73.8300  -146.6850  180.0000  top
+C3        C                 C_1206_3216Metric                                          83.0800  -144.1850  180.0000  top
+C4        100nF             C_0603_1608Metric                                          83.8300  -141.1850  180.0000  top
+C5        C                 C_1206_3216Metric                                          83.0800  -124.1850  180.0000  top
+C7        100nF             C_0603_1608Metric                                          83.8300  -121.1850  180.0000  top
+C9        100nF             C_0603_1608Metric                                          73.8300  -126.6850  180.0000  top
+C10       22uF              C_0805_2012Metric                                          73.6550  -129.1850  180.0000  top
+D1        SUF4007           D_MELF                                                     77.6050  -141.7850  270.0000  top
+D2        1N4007            D_SOD-123F                                                111.1250  -149.3550   90.0000  top
+D3        SUF4007           D_MELF                                                     94.1200  -148.8600    0.0000  top
+D4        SUF4007           D_MELF                                                     94.1200  -138.7000    0.0000  top
+D5        SUF4007           D_MELF                                                     94.1200  -129.0000    0.0000  top
+D6        SUF4007           D_MELF                                                     94.1200  -118.8400    0.0000  top
+D7        1N4007            D_SOD-123F                                                111.1250  -144.6500   90.0000  top
+D8        1N4007            D_SOD-123F                                                111.1250  -129.6700   90.0000  top
+D9        SUF4007           D_MELF                                                     76.6050  -121.7850  270.0000  top
+D10       1N4007            D_SOD-123F                                                111.1250  -124.9650   90.0000  top
+Q1        TPH4R008NH,L1Q(M  SOP-8-1EP_4.57x4.57mm_P1.27mm_EP4.57x4.45mm_ThermalVias   106.6800  -152.4600  180.0000  top
+Q2        TPH4R008NH,L1Q(M  SOP-8-1EP_4.57x4.57mm_P1.27mm_EP4.57x4.45mm_ThermalVias   106.6800  -142.3000  180.0000  top
+Q5        TPH4R008NH,L1Q(M  SOP-8-1EP_4.57x4.57mm_P1.27mm_EP4.57x4.45mm_ThermalVias   106.6800  -132.6000  180.0000  top
+Q6        TPH4R008NH,L1Q(M  SOP-8-1EP_4.57x4.57mm_P1.27mm_EP4.57x4.45mm_ThermalVias   106.6800  -122.4400  180.0000  top
+R1        1kR               R_2512_6332Metric                                         100.9650  -141.6625   90.0000  top
+R2        1kR               R_2512_6332Metric                                         100.9650  -131.9625   90.0000  top
+R3        1kR               R_2512_6332Metric                                         100.9650  -121.8025   90.0000  top
+R4        10R               R_2512_6332Metric                                          93.5575  -134.0800    0.0000  top
+R5        10R               R_2512_6332Metric                                          93.5575  -123.9200    0.0000  top
+R9        10R               R_2512_6332Metric                                          93.5575  -153.9400    0.0000  top
+R10       10R               R_2512_6332Metric                                          93.5575  -143.7800    0.0000  top
+R17       1kR               R_2512_6332Metric                                         100.9650  -151.8225   90.0000  top
+U1        IR2110S           SOIC-16W_7.5x10.3mm_P1.27mm_R90                            81.9550  -151.6300   90.0000  top
+U2        IR2110S           SOIC-16W_7.5x10.3mm_P1.27mm_R90                            81.8200  -131.5400   90.0000  top
+## End

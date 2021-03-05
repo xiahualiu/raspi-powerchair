@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>C:\Users\duicu\OneDrive\Documents\GitHub\raspi-powerchair\hardware\driver_board\driver_board.sch</source>
-    <date>2021/3/4 13:53:15</date>
+    <source>C:\Users\duicu\Documents\GitHub\raspi-powerchair\hardware\driver_board\driver_board.sch</source>
+    <date>2021/3/5 12:04:06</date>
     <tool>Eeschema (5.1.9)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -98,7 +98,7 @@
     </comp>
     <comp ref="U1">
       <value>IR2110S</value>
-      <footprint>Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm</footprint>
+      <footprint>driver_board:SOIC-16W_7.5x10.3mm_P1.27mm_R90</footprint>
       <datasheet>https://www.infineon.com/dgdl/ir2110.pdf?fileId=5546d462533600a4015355c80333167e</datasheet>
       <fields>
         <field name="LCSC">C2968</field>
@@ -142,7 +142,7 @@
     </comp>
     <comp ref="Q1">
       <value>TPH4R008NH,L1Q(M</value>
-      <footprint>driver_board:TPH4R008NH,L1Q(M</footprint>
+      <footprint>driver_board:SOP-8-1EP_4.57x4.57mm_P1.27mm_EP4.57x4.45mm_ThermalVias</footprint>
       <datasheet>https://www.mouser.com/datasheet/2/408/TPH4R008NH_datasheet_en_20191017-1140027.pdf</datasheet>
       <fields>
         <field name="LCSC">C396039</field>
@@ -153,7 +153,7 @@
     </comp>
     <comp ref="Q2">
       <value>TPH4R008NH,L1Q(M</value>
-      <footprint>driver_board:TPH4R008NH,L1Q(M</footprint>
+      <footprint>driver_board:SOP-8-1EP_4.57x4.57mm_P1.27mm_EP4.57x4.45mm_ThermalVias</footprint>
       <datasheet>https://www.mouser.com/datasheet/2/408/TPH4R008NH_datasheet_en_20191017-1140027.pdf</datasheet>
       <fields>
         <field name="LCSC">C396039</field>
@@ -230,7 +230,7 @@
     </comp>
     <comp ref="U2">
       <value>IR2110S</value>
-      <footprint>Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm</footprint>
+      <footprint>driver_board:SOIC-16W_7.5x10.3mm_P1.27mm_R90</footprint>
       <datasheet>https://www.infineon.com/dgdl/ir2110.pdf?fileId=5546d462533600a4015355c80333167e</datasheet>
       <fields>
         <field name="LCSC">C2968</field>
@@ -274,7 +274,7 @@
     </comp>
     <comp ref="Q5">
       <value>TPH4R008NH,L1Q(M</value>
-      <footprint>driver_board:TPH4R008NH,L1Q(M</footprint>
+      <footprint>driver_board:SOP-8-1EP_4.57x4.57mm_P1.27mm_EP4.57x4.45mm_ThermalVias</footprint>
       <datasheet>https://www.mouser.com/datasheet/2/408/TPH4R008NH_datasheet_en_20191017-1140027.pdf</datasheet>
       <fields>
         <field name="LCSC">C396039</field>
@@ -285,7 +285,7 @@
     </comp>
     <comp ref="Q6">
       <value>TPH4R008NH,L1Q(M</value>
-      <footprint>driver_board:TPH4R008NH,L1Q(M</footprint>
+      <footprint>driver_board:SOP-8-1EP_4.57x4.57mm_P1.27mm_EP4.57x4.45mm_ThermalVias</footprint>
       <datasheet>https://www.mouser.com/datasheet/2/408/TPH4R008NH_datasheet_en_20191017-1140027.pdf</datasheet>
       <fields>
         <field name="LCSC">C396039</field>
@@ -562,7 +562,7 @@
       <uri>C:\Program Files\KiCad\share\kicad\library/Diode.lib</uri>
     </library>
     <library logical="driver_board">
-      <uri>C:\Users\duicu\OneDrive\Documents\GitHub\raspi-powerchair\hardware\driver_board/driver_board.lib</uri>
+      <uri>C:\Users\duicu\Documents\GitHub\raspi-powerchair\hardware\driver_board/driver_board.lib</uri>
     </library>
   </libraries>
   <nets>

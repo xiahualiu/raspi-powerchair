@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source C:\Users\duicu\OneDrive\Documents\GitHub\raspi-powerchair\hardware\driver_board\driver_board.sch)
-    (date "2021/3/4 13:44:04")
+    (source C:\Users\duicu\Documents\GitHub\raspi-powerchair\hardware\driver_board\driver_board.sch)
+    (date "2021/3/5 10:44:12")
     (tool "Eeschema (5.1.9)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -116,7 +116,7 @@
       (tstamp 608CE5D7))
     (comp (ref Q1)
       (value "TPH4R008NH,L1Q(M")
-      (footprint "driver_board:TPH4R008NH,L1Q(M")
+      (footprint Package_SO:SOP-8-1EP_4.57x4.57mm_P1.27mm_EP4.57x4.45mm_ThermalVias)
       (datasheet https://www.mouser.com/datasheet/2/408/TPH4R008NH_datasheet_en_20191017-1140027.pdf)
       (fields
         (field (name LCSC) C396039))
@@ -125,7 +125,7 @@
       (tstamp 6091B1D2))
     (comp (ref Q2)
       (value "TPH4R008NH,L1Q(M")
-      (footprint "driver_board:TPH4R008NH,L1Q(M")
+      (footprint Package_SO:SOP-8-1EP_4.57x4.57mm_P1.27mm_EP4.57x4.45mm_ThermalVias)
       (datasheet https://www.mouser.com/datasheet/2/408/TPH4R008NH_datasheet_en_20191017-1140027.pdf)
       (fields
         (field (name LCSC) C396039))
@@ -224,7 +224,7 @@
       (tstamp 6095D1C7))
     (comp (ref Q5)
       (value "TPH4R008NH,L1Q(M")
-      (footprint "driver_board:TPH4R008NH,L1Q(M")
+      (footprint Package_SO:SOP-8-1EP_4.57x4.57mm_P1.27mm_EP4.57x4.45mm_ThermalVias)
       (datasheet https://www.mouser.com/datasheet/2/408/TPH4R008NH_datasheet_en_20191017-1140027.pdf)
       (fields
         (field (name LCSC) C396039))
@@ -233,7 +233,7 @@
       (tstamp 6095D1D2))
     (comp (ref Q6)
       (value "TPH4R008NH,L1Q(M")
-      (footprint "driver_board:TPH4R008NH,L1Q(M")
+      (footprint Package_SO:SOP-8-1EP_4.57x4.57mm_P1.27mm_EP4.57x4.45mm_ThermalVias)
       (datasheet https://www.mouser.com/datasheet/2/408/TPH4R008NH_datasheet_en_20191017-1140027.pdf)
       (fields
         (field (name LCSC) C396039))
@@ -456,7 +456,7 @@
     (library (logical Diode)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Diode.lib"))
     (library (logical driver_board)
-      (uri C:\Users\duicu\OneDrive\Documents\GitHub\raspi-powerchair\hardware\driver_board/driver_board.lib)))
+      (uri C:\Users\duicu\Documents\GitHub\raspi-powerchair\hardware\driver_board/driver_board.lib)))
   (nets
     (net (code 1) (name "Net-(D6-Pad1)")
       (node (ref R5) (pin 1))
