@@ -7,13 +7,20 @@ Also, the DC motor driver board design can be found under the `hardware` folder.
 ## Hardware Requirements
 
 * Any Raspberry Pi 4B model.
-* Motor driver board in this repo.
+* DJI M2006 Brushless Motor
+* DJI C610 Speed Controller
  
 ## Software Requirements
 
-* Raspbian OS
+* Ubuntu Server 20.04 for Pi
+* ROS Noetic
 * GCC
-* Pigpio libarary
+* G++
+* cmake
+* make
+* spidev >= 3.5
+
+Please ensure the SPI devices are enabled in the `raspi-config`, or you add `dtparam=spi=on` in the `/boot/config.txt` file.
 
 For the schematics and PCB viewing and editing, [KiCad](https://kicad.org/) is required.  
 

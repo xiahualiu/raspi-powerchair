@@ -23,14 +23,13 @@ C610_CAN_ID=  0x200
 
 # Return a handle for SPI device
 ## Default SPI channel = 0 
-## Default SPI Baud = 1Mbps
+## Default SPI Baud = 10Mbps
 ## Default SPI Mode = 0
 ## Return >=0 if success
 
-def spi_init(spi_handle, baud=1000000, mode=0b00):
+def spi_init(spi_handle, baud=10000000, mode=0b00):
 	spi_handle.max_speed_hz=baud
 	spi_handle.mode=mode
-
 
 
 # MCP2515 CAN Interface Initialization, MUST run before read/write to the CAN bus
@@ -68,28 +67,65 @@ def mcp_init(spi_handle):
 
 # Initiate a Data Frame (8 bytes) transmission on CAN bus
 # Poll the available slots before writing to a TX buffer
+# If all TX buffers on MCP2515 are full, print an warning and discard the data
 
 def can_send_data(spi_handle, data):
 	
 	# Poll available TX slots
+	status_values=spi_handle.xfer2([MCP_READ_STATUS,0xff,0xff])
+  
+	# Debug
+	rospy.loginfo("The status value is: {}, {}".format(status_values[1], status_values[2]))
 
+	if status_values[1] != status_values[2]:
+		rospy.logfatel("Error! Found discrepancy bits in data verification")
+		return -1
 
-	# Write TXBnSIDH: TRANSMIT BUFFER n STANDARD IDENTIFIER REGISTER HIGH
-	device_handle.spi_write(spi_handle, [MCP_WRITE, tx_slot+1, tx_canid>>3 & 0xff])
+	TXB0REQ=status_values[1] >> 2 & 1
+	TXB1REQ=status_values[1] >> 4 & 1
+	TXB2REQ=status_values[1] >> 6 & 1
 
-	# Write TXBnSIDL: TRANSMIT BUFFER n STANDARD IDENTIFIER REGISTER LOW
-	top3=tx_canid & 0b111 
-	device_handle.spi_write(spi_handle, [MCP_WRITE, tx_slot+2, top3 << 5])
-
-	# Write TXBnDLC: TRANSMIT BUFFER n DATA LENGTH CODE REGISTER
-	device_handle.spi_write(spi_handle, [MCP_WRITE, tx_slot+5, 0b00001000])
+	# REQ bits will be cleared after the transmission
+	if TXB0REQ==0:
+		# Load TX Buffer 0 And Send RTS signal
+		rospy.loginfo("Send Data on TX Buffer 0.")
+		spi_handle.writebytes([MCP_LOAD_TX_BUFFER_0]+data)
+		spi_handle.writebytes([MCP_RTS_0])
+	elif TXB1REQ==0:
+		# Load TX Buffer 1 And Send RTS signal
+		rospy.loginfo("Send Data on TX Buffer 1.")
+		spi_handle.writebytes([MCP_LOAD_TX_BUFFER_1]+data)
+		spi_handle.writebytes([MCP_RTS_1])
+	elif TXB2REQ==0:
+		# Load TX Buffer 2 And Send RTS signal
+		rospy.loginfo("Send Data on TX Buffer 2.")
+		spi_handle.writebytes([MCP_LOAD_TX_BUFFER_2]+data)
+		spi_handle.writebytes([MCP_RTS_2])
+	else:
+		rospy.loginfo("MCP2515 CAN TX BUFFER is full, new data cannot be sent")
+		return -2
 	
-	device_handle.spi_write(spi_handle, )
-
+	return 0
 
 if __name__=="__main__":
+
+	# ROS init
+	rospy.init_node('mcp2515')
+	rospy.loginfo("ROS node: /mcp2515 was created.")
+
 	# Open SPI device 0
 	spi=spidev.SpiDev()
-	spi.open=(0,0)
-	spi_init(spi,1000000, 0b00)
-	mcp_init(spi,)
+	spi.open(0,0)
+	rospy.loginfo("SPI device 0 at bus 0 was connected.")
+
+	# Initialize SPI device
+	spi_init(spi,10000000, 0b00)
+	mcp_init(spi)
+	rospy.loginfo("SPI device was intialized.")
+
+	# Send a dummy data
+	can_send_data(spi,[0xfa]*8)
+	
+	buffer_values=spi.xfer2([MCP_READ,0x36,0xff])
+	rospy.loginfo("Read TX1 buffer: {}".format(buffer_values[2]))
+
