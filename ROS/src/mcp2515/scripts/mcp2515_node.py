@@ -21,11 +21,9 @@ MCP_RTS_2=    0b10000100
 
 C610_CAN_ID=  0x200
 
-# Return a handle for SPI device
-## Default SPI channel = 0 
+# Initialize the handle for SPI device
 ## Default SPI Baud = 10Mbps
 ## Default SPI Mode = 0
-## Return >=0 if success
 
 def spi_init(spi_handle, baud=10000000, mode=0b00):
 	spi_handle.max_speed_hz=baud
@@ -123,7 +121,7 @@ if __name__=="__main__":
 	mcp_init(spi)
 	rospy.loginfo("SPI device was intialized.")
 
-	# Send a dummy data
+	# Send dummy data
 	can_send_data(spi,[0xfa]*8)
 	
 	buffer_values=spi.xfer2([MCP_READ,0x36,0xff])
