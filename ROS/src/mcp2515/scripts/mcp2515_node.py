@@ -11,6 +11,10 @@ MCP_WRITE =	0b00000010
 MCP_READ_STATUS =  0b1010000
 MCP_RX_STATUS =		 0b1011000
 
+# Read from RXB0SIDH
+MCP_READ_RX0_BUFFER = 0b10010000
+MCP_READ_RX1_BUFFER = 0b10010100
+
 MCP_LOAD_TX_BUFFER_0 = 0b01000001
 MCP_LOAD_TX_BUFFER_1 = 0b01000011
 MCP_LOAD_TX_BUFFER_2 = 0b01000101
@@ -28,7 +32,6 @@ C610_CAN_ID=  0x200
 def spi_init(spi_handle, baud=10000000, mode=0b00):
 	spi_handle.max_speed_hz=baud
 	spi_handle.mode=mode
-
 
 # MCP2515 CAN Interface Initialization, MUST run before read/write to the CAN bus
 # CAN TX ID is set once forever here, so we do not need to send CAN ID every time
@@ -62,6 +65,11 @@ def mcp_init(spi_handle):
 	spi_handle.writebytes([MCP_WRITE, 0x45, 0b00001000])
 	spi_handle.writebytes([MCP_WRITE, 0x55, 0b00001000])
 
+	# Write RXB0CTRL: RECEIVE BUFFER 0 CONTROL REGISTER
+	# Enable Rollover
+	# Disable CAN ID filter - because there are too many monitered CAN IDs on bus
+	spi_handle.writebytes([MCP_WRITE, 0x60, 0b01100100])
+
 
 # Initiate a Data Frame (8 bytes) transmission on CAN bus
 # Poll the available slots before writing to a TX buffer
@@ -76,7 +84,7 @@ def can_send_data(spi_handle, data):
 	rospy.loginfo("The status value is: {}, {}".format(status_values[1], status_values[2]))
 
 	if status_values[1] != status_values[2]:
-		rospy.logfatel("Error! Found discrepancy bits in data verification")
+		rospy.logfatal("Error! Found bit discrepancy in the TX_STATUS verification")
 		return -1
 
 	TXB0REQ=status_values[1] >> 2 & 1
@@ -104,6 +112,77 @@ def can_send_data(spi_handle, data):
 		return -2
 	
 	return 0
+
+# Read RX buffer 0 or 0 and 1, Clear RX flags
+# Poll the status of RX buffer before retrieving any data
+# Return data format:
+# [CAN_ID0, DLC0, BYTE0_0, BYTE1_0,..., BYTE7_0, (CAN_ID1, DLC1, BYTE0_1, BYTE1_1,...,BYTE7_1)]
+
+def can_read_data(spi_handle)
+	
+	# Poll RX status
+	rx_status=spi_handle.xfer2([MCP_RX_STATUS, 0xff, 0xff])
+
+	# Check discrepancy
+	if rx_status[1] != rx_status[2]:
+		rospy.logfatal("Error! Found bit discrepancy in the RX_STATUS verification")
+		return -1
+
+	# Check if message is in buffer
+	RXnIF=rx_status[1]>>5 & 0b11
+	if RXnIF == 0:
+		rospy.loginfo("RX buffer is empty.")
+		return -2
+
+
+	return_data=[]
+	return_data_tmp=[0]*10
+	
+	# Something in RX0 buffer
+	if RXnIF & 1:
+		rx0=spi_handle.xfer2([MCP_READ_RX0_BUFFER]+[0xff]*13)
+
+		# Write CAN_ID0
+		return_data_tmp[0]=rx0[1]<<3+rx0[2]>>5
+
+		if rx0[2]>>3 & 1:
+			rospy.logerror("Error, RX0 message has extended identifier.")
+
+		# Write DLC0
+		return_data_tmp[1]=rx0[5] & 0b1111
+
+		if rx0[5] >> 6 & 1:
+			rospy.logerror("Error, RX0 message is a remote frame.")
+
+		# Copy all 8 bytes no matter DLC
+		return_data_tmp[2:10]=rx0[6:14]
+
+		# Push to return list
+		return_data=return_data+return_data_tmp.copy()
+
+	# Something in RX1 buffer
+	if RXnIF >> 1:
+		rx1=spi_handle.xfer2([MCP_READ_RX1_BUFFER]+[0xff]*13)
+
+		# Write CAN_ID1
+		return_data_tmp[0]=rx1[1]<<3+rx1[2]>>5
+
+		if rx1[2]>>3 & 1:
+			rospy.logerror("Error, RX1 message has extended identifier.")
+
+		# Write DLC0
+		return_data_tmp[1]=rx0[5] & 0b1111
+
+		if rx1[5] >> 6 & 1:
+			rospy.logerror("Error, RX1 message is a remote frame.")
+
+		# Copy all 8 bytes no matter DLC
+		return_data_tmp[2:10]=rx1[6:14]
+
+		# Push to return list
+		return_data=return_data+return_data_tmp.copy()
+
+	return return_data
 
 if __name__=="__main__":
 
